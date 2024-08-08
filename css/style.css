@@ -1,8 +1,19 @@
 /* Columns */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5rem;
+    min-height: 300vh;
+    background-color: #000000;
 }
 
 .columns{
@@ -21,6 +32,7 @@ body{
     background-color: #333;
     color: #fff;
     padding: 1rem;
+    width: 250px;
     break-inside: avoid; /*Helps the element not break in half during screen resizing*/
 }
 
@@ -38,3 +50,120 @@ body{
 
 /* Position */
 
+.outer-container{
+    border: 3px dashed #333;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    /* position: relative; */
+}
+
+.inner-container{
+    border: 2px solid blue;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    color: #000000;
+    padding: 1rem;
+}
+
+.absolute{
+    background-color: blue;
+    width: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.relative{
+    background-color: red;
+    position: relative;
+    top: 300px;
+    left: 150px;
+}
+
+.fixed{
+    background-color: green;
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    z-index: 1;
+}
+
+.sticky{
+    background-color: #b7ca48;
+    position: sticky;
+    top: 100px;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: #42e6ff;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+/* position:
+            relative:position relative to where it normally is
+            fixed:position relative to the viewport
+            absolute:position relative to nearest ancestor
+            sticky:position based on scroll position
+            static:default position for an element 
+*/
+
+section{
+    height: 100vh;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+header, footer{
+    color: wheat;
+    text-align: center;
+    height: 100px;
+    font-size: 3rem;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+footer{
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+}
+a{
+    color: aliceblue;
+}
+.social{
+    background-color: royalblue;
+    color: #fff;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+    outline: none;
+}

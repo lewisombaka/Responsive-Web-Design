@@ -1,11 +1,11 @@
 /* Columns */
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
-html{
+/* html{
     scroll-behavior: smooth;
 }
 
@@ -19,7 +19,7 @@ body{
 .columns{
     column-count: 4;
     column-width: 250px;
-    column-rule: 3px solid #333; /*columns border*/
+    column-rule: 3px solid #333; columns border
     column-gap: 3rem; 
 }
 
@@ -33,9 +33,9 @@ body{
     color: #fff;
     padding: 1rem;
     width: 250px;
-    break-inside: avoid; /*Helps the element not break in half during screen resizing*/
-}
-
+    break-inside: avoid; Helps the element not break in half during screen resizing
+} */
+/* 
 .columns .quote{
     font-size: 3rem;
     text-align: center;
@@ -46,18 +46,18 @@ body{
 
 .nowrap{
     white-space: nowrap;
-}
+} */
 
 /* Position */
 
-.outer-container{
+/* .outer-container{
     border: 3px dashed #333;
     width: 75vw;
     height: 85vh;
     margin: 40px auto;
-    /* position: relative; */
-}
-
+    position: relative;
+} */
+/* 
 .inner-container{
     border: 2px solid blue;
     width: 40vw;
@@ -108,7 +108,7 @@ body{
     position: sticky;
     top: 0;
     right: 0;
-}
+} */
 
 /* position:
             relative:position relative to where it normally is
@@ -117,7 +117,7 @@ body{
             sticky:position based on scroll position
             static:default position for an element 
 */
-
+/* 
 section{
     height: 100vh;
 }
@@ -166,4 +166,50 @@ a{
     left: 0;
     z-index: 1;
     outline: none;
+} */
+
+/* Flexbox */
+
+/* 
+    css flex
+    justify-content(left to right)
+    align-items(bottom to top)
+    flex-direction(relative to the text direction)
+    order(integer)
+    align-self(align an individual bottom to top)
+    flex-wrap(squeeze all items on a single line)
+    flex-flow(combination of flex-wrap & flex-direction)
+    align-content(but align-content determines the spacing between lines, while align-items determines how the items as a whole are aligned within the container. When there is only one line, align-content has no effect.)
+*/
+
+.body{
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container{
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid #000;
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.box{
+    min-width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+    display:flex;
+    justify-content: center;
+}
+
+.box:nth-child(2){
+    background-color: aqua;
+    order: 1;
 }

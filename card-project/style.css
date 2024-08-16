@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:100vh;
+    background-color: #36362ca9;
+    flex-grow: 1;
+}
+
+img{
+    width:200px;
+    border: 2px solid #460404bb;
+    border-radius: 50%;
+}
+
+.profile{
+    width:220px;
+    height: auto;
+    margin: 12px;
+    border: 3px solid darkgray;
+    background-color: #333;
+    text-align: center;
+}
+
+.container{
+    display:flex;
+    justify-content: space-around;
+}
+
+h1, footer{
+    background-color: rgb(3, 9, 94);
+    text-align: center;
+}

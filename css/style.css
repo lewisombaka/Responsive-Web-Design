@@ -300,19 +300,19 @@ figcaption{
 } */
 
 /* Media Queries */
-*{
+/* *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
-body{
+/* body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: radial-gradient(aliceblue, salmon);
     display: flex;
-    flex-direction: column;
-}
-header, nav, main, footer{
+    flex-direction: column; 
+} */
+/* header, nav, main, footer{
     display: grid;
     place-content: center;
     grid-template-columns: 100%;
@@ -333,11 +333,24 @@ nav{
     border-bottom: 2px solid saddlebrown;
 }
 @media screen and (max-width: 480px){
-    /* max-width: ; */
-    /* orientation: landscape; */
-    /* min-aspect-ratio:16/9; */
+    max-width: ;
+    orientation: landscape;
+    min-aspect-ratio:16/9;
 
     nav{
         display: none;
     }
-}
+} */
+
+ /* Pseudo */
+ /* 
+    class='one colon' & elements='double colon'
+ */
+
+ nav:is(a:hover, a:focus){
+    color: red;
+ }
+
+ body:any-link{
+    color: yellowgreen;
+ }

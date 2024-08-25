@@ -102,6 +102,25 @@ main {
     border-radius: 50%;
 }
 
+.profile:target{
+    border: 3px dashed rebeccapurple;
+}
+
+/* .profile:nth-child(even){
+    background-color: papayawhip;
+
+
+} 
+    
+.profile figcaption::first-letter, first-line{
+    font-size:2rem;
+}
+
+.profile::after, .profile::before{
+    content: '''';
+}
+*/
+
 @media screen and (max-width:480px){
     nav{
         display: block;

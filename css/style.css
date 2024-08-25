@@ -346,11 +346,70 @@ nav{
  /* 
     class='one colon' & elements='double colon'
  */
-
+/* 
  nav:is(a:hover, a:focus){
     color: red;
  }
 
  body:any-link{
     color: yellowgreen;
+ } */
+
+
+ /* variables */
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ :root{
+    /* color */
+    --BGCOLOR:#475569;
+    --ALTBGCOLOR:#1E293B;
+    --COLOR:whitesmoke;
+    --FONT-FAMILY:'Segoe UI', Tahoma;
+    --SHADOWS:6px 6px 5px -5px var(--ALTBGCOLOR);
+ }
+
+ body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: var(--FONT-FAMILY);
+    text-align: center;
+    color: var(--COLOR);
+ }
+ nav, main{color:var(--ALTBGCOLOR)}
+ main{
+    background-image: radial-gradient(var(--COLOR), var(--BGCOLOR));
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ h1{
+    background-color: var(--ALTBGCOLOR);
+ }
+ nav{
+    background-color: var(--COLOR);
+    box-shadow: var(--SHADOWS);
+ }
+ footer{
+    background-color: var(--ALTBGCOLOR);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ }
+
+ @media (prefers-color-scheme:light){
+    :ROOT{
+    --BGCOLOR:green;
+    --ALTBGCOLOR:RED;
+    --COLOR:yellowgreen;
+    }
  }

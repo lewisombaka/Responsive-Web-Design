@@ -366,7 +366,6 @@ nav{
  }
 
  :root{
-    /* color */
     --BGCOLOR:#475569;
     --ALTBGCOLOR:#1E293B;
     --COLOR:whitesmoke;
@@ -406,10 +405,14 @@ nav{
     text-align: center;
  }
 
+ h2{
+    display: block;
+ }
+/* 
  @media (prefers-color-scheme:light){
     :ROOT{
     --BGCOLOR:green;
     --ALTBGCOLOR:RED;
     --COLOR:yellowgreen;
     }
- }
+ } */

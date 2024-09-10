@@ -38,18 +38,23 @@
 
 // 5. Math Methods
 
-console.log(Math.PI);
-console.log (Math.trunc(Math.PI)); 
+// console.log(Math.PI);
+// console.log (Math.trunc(Math.PI)); 
 
-console.log (Math.round(Math.PI));
-console.log (Math.ceil(Math.PI));
-console.log (Math.floor(Math.PI));
-console.log (Math.pow(2,4));
-console.log (Math.min(2, 4, 6, 0));
-console.log (Math.max(2, 4, 6, 0));
-console.log (Math.random());
-console.log (Math.random());
-console.log (Math.random());
-console.log (Math.floor((Math.random() * 10)+1));
-console.log (Math.floor((Math.random() * 10)+1));
-console.log (Math.floor((Math.random() * 10)+1));
+// console.log (Math.round(Math.PI));
+// console.log (Math.ceil(Math.PI));
+// console.log (Math.floor(Math.PI));
+// console.log (Math.pow(2,4));
+// console.log (Math.min(2, 4, 6, 0));
+// console.log (Math.max(2, 4, 6, 0));
+// console.log (Math.random());
+// console.log (Math.random());
+// console.log (Math.random());
+// console.log (Math.floor((Math.random() * 10)+1));
+// console.log (Math.floor((Math.random() * 10)+1));
+// console.log (Math.floor((Math.random() * 10)+1));
+
+// 6. Code Challenges
+// 1. Write a code that will return a random letter from your name
+const myName = 'Lewis'
+console.log(myName);

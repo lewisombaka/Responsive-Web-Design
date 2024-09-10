@@ -1,0 +1,26 @@
+/* Flexbox */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body{
+    background-color: #9e6c30;
+    border: 3px dashed;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid greenyellow;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 100px, 100px;
+    align-items: center;
+    border: 2px solid greenyellow;
+}
